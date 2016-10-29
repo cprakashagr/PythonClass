@@ -14,6 +14,10 @@ BOT_NAME = 'scraper'
 SPIDER_MODULES = ['scraper.spiders']
 NEWSPIDER_MODULE = 'scraper.spiders'
 
+# Log related settings
+LOG_ENABLED = False
+#LOG_LEVEL = 'VERBOSE'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scraper (+http://www.yourdomain.com)'
