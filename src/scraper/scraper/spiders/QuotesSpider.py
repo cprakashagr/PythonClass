@@ -69,4 +69,24 @@ class QuotesSpider(scrapy.Spider):
 
 
         '''
+
+
+
+        '''
+
+        Revisiting with xpaths:
+
+
+
+>>> len(response.xpath('//div[@itemscope]').extract())
+10
+
+>>> quotes = response.xpath('//div[@itemscope]').extract()
+
+>>> quotes[0]
+'<div class="quote" itemscope itemtype="http://schema.org/CreativeWork">\n        <span class="text" itemprop="text">“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”</span>\n        <span>by <small class="author" itemprop="author">Albert Einstein</small>\n        <a href="/author/Albert-Einstein">(about)</a>\n        </span>\n        <div class="tags">\n            Tags:\n            <meta class="keywords" itemprop="keywords" content="change,deep-thoughts,thinking,world"> \n            \n            <a class="tag" href="/tag/change/page/1/">change</a>\n            \n            <a class="tag" href="/tag/deep-thoughts/page/1/">deep-thoughts</a>\n            \n            <a class="tag" href="/tag/thinking/page/1/">thinking</a>\n            \n            <a class="tag" href="/tag/world/page/1/">world</a>\n            \n        </div>\n    </div>'
+
+
+
+        '''
         pass
